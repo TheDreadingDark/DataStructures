@@ -25,4 +25,5 @@ public:
     void displayInformation();
     long getTimeInMicroseconds();
 };
+
 #endif /* Timer_hpp */
