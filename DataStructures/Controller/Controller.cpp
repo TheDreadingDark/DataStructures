@@ -22,7 +22,7 @@ void Controller :: start()
     
     vector<CrimeData> myData = FileController :: readCrimeDataToVector("/Users/awoo9855/Documents/Swift Projects/DataStructures/DataStructures/Data/crime.csv");
     
-    for (int index = 234; index < 400; index += 30)
+    for (int index = 200; index < 216; index ++)
     {
         cout << index << " is " << myData[index] << endl;
     }
