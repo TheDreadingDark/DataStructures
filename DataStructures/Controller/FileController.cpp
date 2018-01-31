@@ -29,8 +29,12 @@ vector<CrimeData> FileController :: readCrimeDataToVector(string filename)
             if (rowCount != 0)
             {
                 //Create a CrimeData instance from the line.
-                CrimeData row(currentCSVLine);
-                crimeVector.push_back(row);
+                if(currentCSVLine.length() != 0)
+                {
+                    CrimeData row(currentCSVLine);
+                    crimeVector.push_back(row);
+            
+                }
             }
             rowCount++;
         }
