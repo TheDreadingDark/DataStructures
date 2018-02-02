@@ -38,7 +38,7 @@ public:
     int getSize() const;
     Type getFromIndex(int index);
     void setAtIndex(int index, Type data);
-}
+};
 
 template <class Type>
 Array<Type> :: Array(int size)
@@ -79,7 +79,7 @@ Array<Type> & Array<Type> :: operator = (const Array <Type> & toAssign)
             delete [] internalArray;
             size = toAssign.getSize();
             internalArray = new Type [size];
-            
+        }
         for (int index = 0; index < size; index++)
         {
             internalArray[index] = toAssign[index];
@@ -93,13 +93,13 @@ template <class Type> //Left hand of = sign -- assigns to references
 Type & Array<Type> :: operator [] (int index)
 {
     assert(index >= 0 && index < size);
-    return interanlArray[index];
+    return internalArray[index];
 }
     
 template <class Type> //Right hand of = sign -- copy
 Type Array<Type> :: operator [] (int index) const
 {
-    assert(index >= && index < size);
+    assert(index >= 0 && index < size);
     return internalArray[index];
 }
     
@@ -113,16 +113,6 @@ template <class Type>
 Type Array<Type> :: getFromIndex(int index)
 {
     assert(index >=0 && index < size);
-    
-    Type value = internalArray[index];
-    
-    return value;
-}
-    
-template <class Type>
-void Array<Type> :: setAtIndex(int pos, Type item)
-{
-    assert(pos >= 0 && pos < size);
     
     Type value = internalArray[index];
     
