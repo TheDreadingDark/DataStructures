@@ -89,14 +89,14 @@ Array<Type> & Array<Type> :: operator = (const Array <Type> & toAssign)
     return *this;
 }
     
-template <class Type> //Left hand of = sign
+template <class Type> //Left hand of = sign -- assigns to references
 Type & Array<Type> :: operator [] (int index)
 {
     assert(index >= 0 && index < size);
     return interanlArray[index];
 }
     
-template <class Type> //Right hand of = sign
+template <class Type> //Right hand of = sign -- copy
 Type Array<Type> :: operator [] (int index) const
 {
     assert(index >= && index < size);
