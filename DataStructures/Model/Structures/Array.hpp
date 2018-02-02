@@ -135,5 +135,5 @@ void Array<Type> :: setAtIndex(int pos, Type item)
     assert(pos >= 0 && pos < size);
     internalArray[pos] = item;
 }
-    
+
 #endif /* Array_hpp */
