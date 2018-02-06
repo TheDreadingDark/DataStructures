@@ -112,7 +112,7 @@ int Array<Type> :: getSize() const
 template <class Type>
 Type Array<Type> :: getFromIndex(int index)
 {
-    assert(index >=0 && index < size);
+    assert(index >= 0 && index < size);
     
     Type value = internalArray[index];
     
