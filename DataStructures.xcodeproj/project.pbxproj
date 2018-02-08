@@ -37,6 +37,7 @@
 		700D7F2F202251CC00DAB40F /* FileController.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FileController.cpp; sourceTree = "<group>"; };
 		700D7F30202251CC00DAB40F /* FileController.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FileController.hpp; sourceTree = "<group>"; };
 		701335C4202CD92E001477CF /* Node UML.uxf */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = "Node UML.uxf"; path = "../../../Other/Node UML.uxf"; sourceTree = "<group>"; };
+		701335C8202CE499001477CF /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 		702465BF2024F005000ECD56 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 		708D1A92202A33DC004F33D0 /* ArrayTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayTester.cpp; sourceTree = "<group>"; };
 		708D1A93202A33DC004F33D0 /* ArrayTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ArrayTester.hpp; sourceTree = "<group>"; };
@@ -138,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				702465BF2024F005000ECD56 /* Array.hpp */,
+				701335C8202CE499001477CF /* List.hpp */,
 			);
 			path = Structures;
 			sourceTree = "<group>";
