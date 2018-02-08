@@ -15,9 +15,14 @@ template <class Type>
 class LinearNode : public Node<Type>
 {
 protected:
+    Type data;
     LinearNode<Type> * next;
 public:
     //Constructors
+    Node();
+    Node (Type data);
+    void setData (Type data);
+    Type getData();
     LinearNode();
     LinearNode(Type data);
     LinearNode(Type data, LinearNode<Type> * next);
@@ -31,6 +36,31 @@ public:
 /**
  This constructor is used for building the raw structure before values are known.
  */
+template <class Type>
+Node<Type> :: Node()
+{
+    //Needed for default constructor compilation
+    //Since when we create a structure it does not have an item to stor yet.
+}
+
+template <class Type>
+Node<Type> :: Node(Type data)
+{
+    this->data = data;
+}
+
+template <class Type>
+void Node<Type> :: setData(Type data)
+{
+    this->data = data;
+}
+
+template <class Type>
+Type Node<Type> :: getData()
+{
+    return data;
+}
+
 template <class Type>
 LinearNode<Type> :: LinearNode() : Node<Type>()
 {
