@@ -103,4 +103,21 @@ LinkedList<Type> :: ~LinkedList()
     }
 }
 
+Type LinkedList<Type> :: getFromIndex(int index)
+{
+    assert(index >= 0 && index < this->size);
+    Type data;
+    
+    LinearNode<Type> * current front;
+    
+    for (int position = 0; position < index; position++)
+    {
+        current = current->getNextNode();
+    }
+    
+    data = current->getData();
+    
+    return data;
+}
+
 #endif /* LinearNode_hpp */
