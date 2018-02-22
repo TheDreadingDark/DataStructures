@@ -29,9 +29,10 @@ public:
     LinearNode<Type> * getEnd();
     
     //Structure Methods
-    void add(Type item);
-    void addAtIndex(int index, Type item);
-    Type getFromIndex(int index);
+    virtual void add(Type item);
+    virtual void addAtIndex(int index, Type item);
+    virtual  Type getFromIndex(int index);
+    virtual Type remov(int index);
 //    Type setAtIndex(int index, Type item);
 //    bool contains(Type item);
 };
@@ -176,6 +177,45 @@ LinearNode<Type> * LinkedList<Type> :: getFront()
 int LinkedList<Type> :: getSize() const
 {
     return this->size;
+}
+
+LinkedList<CrimeData> FileController :: readDataToList(string fileName)
+{
+    LinkedList<CrimeData> crimes;
+    
+    string currentCSVLine;
+    int rowCount = 0;
+    
+    ifstream dataFile(fileName);
+    
+    //If the file exists at that path.
+    if (dataFile.is_open())
+    {
+        //Keep reading until you are at the end of the file.
+        while (!dataFile.eof())
+        {
+            //Grab each line from the CSV separated by the carriage return character.
+            getline(dataFile, currentCSVLine, '\r');
+            //Exclude header row
+            if (rowCount != 0)
+            {
+                //Create a CrimeData instance from the line. Exclude a blank line (usually if opened separately)
+                if(currentCSVLine.length() != 0)
+                {
+                    CrimeData row(currentCSVLine);
+                    crimes.add(row);
+                }
+            }
+            rowCount++;
+        }
+        dataFile.close();
+    }
+    else
+    {
+        cerr << "NO FILE" << endl;
+    }
+    
+    return crimes;
 }
 
 #endif /* LinearNode_hpp */

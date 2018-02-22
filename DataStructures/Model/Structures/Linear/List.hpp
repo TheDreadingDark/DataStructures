@@ -10,7 +10,7 @@
 #define List_hpp
 
 #include <assert.h>
-#include "../../Nodes/LinearNode.hpp"
+#include "../Model/Nodes/LinearNode.hpp"
 
 virtual <class Type>
 class List
