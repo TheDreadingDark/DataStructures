@@ -52,7 +52,7 @@ void LinkedListTester :: testListWithData()
     listTimer.resetTimer();
     cout << "Here is how long it takes to access a random data value" << endl;
     listTimer.startTimer();
-    int randomLocatioin = (rand() * rand()) % crimes.getSize();
+    int randomLocation = (rand() * rand()) % crimes.getSize();
     cout << "The random index is " << randomLocation << endl;
     listTimer.displayInformation();
 }

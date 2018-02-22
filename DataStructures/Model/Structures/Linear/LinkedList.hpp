@@ -32,18 +32,18 @@ public:
     virtual void add(Type item);
     virtual void addAtIndex(int index, Type item);
     virtual  Type getFromIndex(int index);
-    virtual Type remov(int index);
+    virtual Type remove(int index);
 //    Type setAtIndex(int index, Type item);
 //    bool contains(Type item);
 };
-
+template <class Type>
 LinkedList<Type> :: LinkedList()
 {
     this->front = nullptr;
     this->end = nullptr;
     this->size = 0;
 }
-
+template <class Type>
 LinkedList<Type> :: ~LinkedList()
 {
     LinearNode<Type> * destroyStructure= front;
@@ -53,7 +53,8 @@ LinkedList<Type> :: ~LinkedList()
         delete destroyStructure;
         destroyStructure = front;
     }
-    
+}
+template <class Type>
     void LinkedList<Type> :: add(Type item)
     {
         LinearNode<Type> * newData = new LinearNode<Type>(item);
@@ -71,7 +72,7 @@ LinkedList<Type> :: ~LinkedList()
         
         this->size += 1;
     }
-    
+    template <class Type>
     void LinkedList<Type> :: addAtIndex(int index, Type item)
     {
         assert(index >= 0 && index <= this->size);
@@ -102,14 +103,14 @@ LinkedList<Type> :: ~LinkedList()
             this->size++;
         }
     }
-}
 
+template <class Type>
 Type LinkedList<Type> :: getFromIndex(int index)
 {
     assert(index >= 0 && index < this->size);
     Type data;
     
-    LinearNode<Type> * current front;
+    LinearNode<Type> * current = front;
     
     for (int position = 0; position < index; position++)
     {
@@ -120,7 +121,7 @@ Type LinkedList<Type> :: getFromIndex(int index)
     
     return data;
 }
-
+template <class Type>
 Type LinkedList<Type> :: remove(int index)
 {
     assert(index >= 0 && index < this->size);
@@ -148,7 +149,7 @@ Type LinkedList<Type> :: remove(int index)
         
         if (index == this->size - 1)
         {
-            previous->setNextnode(nullptr);
+            previous->setNextNode(nullptr);
             end = previous;
         }
         else
@@ -163,59 +164,22 @@ Type LinkedList<Type> :: remove(int index)
     delete toBeRemoved;
     return removedData;
 }
-
+template <class Type>
 LinearNode<Type> * LinkedList<Type> :: getEnd()
 {
     return this->end;
 }
-
+template <class Type>
 LinearNode<Type> * LinkedList<Type> :: getFront()
 {
     return this->front;
 }
-
+template <class Type>
 int LinkedList<Type> :: getSize() const
 {
     return this->size;
 }
 
-LinkedList<CrimeData> FileController :: readDataToList(string fileName)
-{
-    LinkedList<CrimeData> crimes;
-    
-    string currentCSVLine;
-    int rowCount = 0;
-    
-    ifstream dataFile(fileName);
-    
-    //If the file exists at that path.
-    if (dataFile.is_open())
-    {
-        //Keep reading until you are at the end of the file.
-        while (!dataFile.eof())
-        {
-            //Grab each line from the CSV separated by the carriage return character.
-            getline(dataFile, currentCSVLine, '\r');
-            //Exclude header row
-            if (rowCount != 0)
-            {
-                //Create a CrimeData instance from the line. Exclude a blank line (usually if opened separately)
-                if(currentCSVLine.length() != 0)
-                {
-                    CrimeData row(currentCSVLine);
-                    crimes.add(row);
-                }
-            }
-            rowCount++;
-        }
-        dataFile.close();
-    }
-    else
-    {
-        cerr << "NO FILE" << endl;
-    }
-    
-    return crimes;
-}
+
 
 #endif /* LinearNode_hpp */

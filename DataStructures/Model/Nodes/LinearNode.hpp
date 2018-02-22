@@ -7,6 +7,8 @@
 //
 
 #include "Node.hpp"
+#ifndef node_hpp
+#define node_hpp
 
 template <class Type>
 class LinearNode : public Node<Type>

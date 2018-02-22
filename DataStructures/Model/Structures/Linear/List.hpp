@@ -10,9 +10,9 @@
 #define List_hpp
 
 #include <assert.h>
-#include "../Model/Nodes/LinearNode.hpp"
+#include "../../Nodes/LinearNode.hpp"
 
-virtual <class Type>
+template <class Type>
 class List
 {
 protected:
@@ -24,7 +24,6 @@ public:
     virtual Type remove(int index) = 0;
     virtual Type getFromIndex(int index) = 0;
     //Helper
-    virtual int getSize() const = 0;
     virtual int getSize() const = 0;
     virtual LinearNode<Type> * getFront() = 0;
     virtual LinearNode<Type> * getEnd() = 0;
