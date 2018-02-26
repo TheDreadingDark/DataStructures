@@ -167,6 +167,7 @@
 			children = (
 				708D1A97202A4717004F33D0 /* LinearNode.hpp */,
 				706B49AE203CA29B001AB5B1 /* Node.hpp */,
+				700280F5204490B6003EFF0B /* DoubleNode.hpp */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
@@ -179,7 +180,6 @@
 				702465BF2024F005000ECD56 /* Array.hpp */,
 				70A8717A203F50F400CE3E4C /* Stack.hpp */,
 				70A8717D203F510800CE3E4C /* Queue.hpp */,
-				700280F5204490B6003EFF0B /* DoubleNode.hpp */,
 			);
 			path = Linear;
 			sourceTree = "<group>";
