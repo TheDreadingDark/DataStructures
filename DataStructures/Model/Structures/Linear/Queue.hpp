@@ -124,7 +124,7 @@ Type Queue<Type> :: peek()
 template <class Type>
 Type Queue<Type> :: getFromIndex(int index)
 {
-    assert(index == 0)
+    assert(index == 0);
     return peek();
 }
 
