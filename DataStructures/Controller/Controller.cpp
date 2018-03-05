@@ -27,13 +27,17 @@ void Controller :: start()
 //        cout << index << " is " << myData[index] << endl;
 //    }
     
-    findMaxAndMin();
+//    findMaxAndMin();
     
-    testArray();
+//    testArray();
     
-    ArrayTester myTest;
-    myTest.testArrayUse();
-    myTest.testAdvancedArray();
+//    ArrayTester myTest;
+//    myTest.testArrayUse();
+//    myTest.testAdvancedArray();
+    
+    RecursionTester test;
+    test.testRecursionNumbers();
+    test.testRecursionString();
 }
     
 void Controller :: findMaxAndMin()

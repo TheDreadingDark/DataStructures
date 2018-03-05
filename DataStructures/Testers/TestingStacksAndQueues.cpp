@@ -78,11 +78,11 @@ void TestingStacksAndQueues :: stackVersusQueue()
     {
         CrimeData temp = data.at(index);
         crimeStack.push(temp);
-        crimeQueue.enqueue(temp);
+//        crimeQueue.enqueue(temp);
     }
 }
 
 void TestingStacksAndQueues :: queueVersusList()
 {
-    
+   
 }
