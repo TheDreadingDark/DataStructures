@@ -63,6 +63,7 @@
 		70A8717A203F50F400CE3E4C /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
 		70A8717D203F510800CE3E4C /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
 		70C814582034BF6800124328 /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
+		70FC7C4D206034BB00E30CBB /* Graph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Graph.png; path = ../../../Other/Graph.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +98,7 @@
 			children = (
 				700D7F1A202243A400DAB40F /* Runner.cpp */,
 				701335C4202CD92E001477CF /* Node UML.uxf */,
+				70FC7C4D206034BB00E30CBB /* Graph.png */,
 				708D1A91202A338F004F33D0 /* Testers */,
 				700D7F242022446800DAB40F /* Diagrams */,
 				700D7F26202244A100DAB40F /* Data */,
