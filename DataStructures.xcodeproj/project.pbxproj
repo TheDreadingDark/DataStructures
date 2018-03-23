@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7001A6F0206572B500522DA1 /* GraphTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7001A6EE206572B500522DA1 /* GraphTester.cpp */; };
 		700280FC2044A64F003EFF0B /* TestingStacksAndQueues.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 700280FA2044A64F003EFF0B /* TestingStacksAndQueues.cpp */; };
 		700D7F1B202243A400DAB40F /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 700D7F1A202243A400DAB40F /* Runner.cpp */; };
 		700D7F232022445F00DAB40F /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 700D7F212022445F00DAB40F /* Controller.cpp */; };
@@ -32,6 +33,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7001A6EE206572B500522DA1 /* GraphTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GraphTester.cpp; sourceTree = "<group>"; };
+		7001A6EF206572B500522DA1 /* GraphTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GraphTester.hpp; sourceTree = "<group>"; };
 		700280F5204490B6003EFF0B /* DoubleNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoubleNode.hpp; sourceTree = "<group>"; };
 		700280F820449A03003EFF0B /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CircularList.hpp; sourceTree = "<group>"; };
 		700280FA2044A64F003EFF0B /* TestingStacksAndQueues.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestingStacksAndQueues.cpp; sourceTree = "<group>"; };
@@ -178,6 +181,8 @@
 				70A053F3204DC5B400D9F191 /* RecursionTester.hpp */,
 				708DC9EC205AE9780047A32D /* SortingTester.cpp */,
 				708DC9ED205AE9780047A32D /* SortingTester.hpp */,
+				7001A6EE206572B500522DA1 /* GraphTester.cpp */,
+				7001A6EF206572B500522DA1 /* GraphTester.hpp */,
 			);
 			path = Testers;
 			sourceTree = "<group>";
@@ -275,6 +280,7 @@
 				70A63A242022597800C6E958 /* CrimeData.cpp in Sources */,
 				700D7F1B202243A400DAB40F /* Runner.cpp in Sources */,
 				700D7F232022445F00DAB40F /* Controller.cpp in Sources */,
+				7001A6F0206572B500522DA1 /* GraphTester.cpp in Sources */,
 				708DC9EE205AE9780047A32D /* SortingTester.cpp in Sources */,
 				706B49B2203CC19A001AB5B1 /* LinkedListTester.cpp in Sources */,
 				700280FC2044A64F003EFF0B /* TestingStacksAndQueues.cpp in Sources */,

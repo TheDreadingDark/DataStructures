@@ -103,7 +103,7 @@ void Graph<Type> :: addVertex(const Type& value)
     for(int otherVertexNumber = 0; otherVertexNumber < vertexCount; otherVertexNumber++)
     {
         adjacencyMatrix[otherVertexNumber][newVertexNumber] = false;
-        adjacencyMatrix[newVertexNumver][otherVertexNumber] = false;
+        adjacencyMatrix[newVertexNumber][otherVertexNumber] = false;
     }
     
     graphData[newVertexNumber] = value;
@@ -119,7 +119,7 @@ void Graph<Type> :: addVertex(const Type& value)
 template <class Type>
 void Graph<Type> :: removeEdge(int source, int target)
 {
-    assert(source >= 0 && source < vertexCount && target >= 0 && < vertexCount);
+    assert(source >= 0 && source < vertexCount && target >= 0 && target < vertexCount);
     adjacencyMatrix[source][target] = false;
 }
 
@@ -150,7 +150,7 @@ template <class Type>
 void Graph<Type> :: addEdgeCost(int source, int target, int cost)
 {
     assert(source >= 0 && source < vertexCount && target >= 0 && target < vertexCount);
-    weightCostMatrix[source][target] = cout;
+    weightCostMatrix[source][target] = cost;
     weightCostMatrix[target][source] = cost;
 }
 
@@ -238,7 +238,7 @@ int Graph<Type> :: costTraversal(Graph<Type> & currentGraph, int start)
     std::queue<int> vertexQueue;
     
     std::fill_n(visited, currentGraph.size(), false);
-    visited[vertex] = true;
+    visited[start] = true;
     
     vertexQueue.push(start);
     while (!vertexQueue.empty())
@@ -251,7 +251,7 @@ int Graph<Type> :: costTraversal(Graph<Type> & currentGraph, int start)
         {
             if(!visited[*setIterator])
             {
-                cost += weightCostMatrix[vertex][*setIterator];
+                cost += weightCostMatrix[currentIndex][*setIterator];
                 visited[*setIterator] = true;
                 vertexQueue.push(*setIterator);
             }
@@ -283,7 +283,7 @@ void Graph<Type> :: breadthFirstTraversal(Graph<Type> & currentGraph, int vertex
         {
             if(!visited[*setIterator])
             {
-                visited[*setIterator])
+                visited[*setIterator];
                 cout << currentGraph[*setIterator] << endl;
                 vertexQueue.push(*setIterator);
             }
