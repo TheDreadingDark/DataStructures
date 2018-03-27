@@ -9,6 +9,7 @@
 #ifndef BinaryNode_hpp
 #define BinaryNode_hpp
 
+#include "Node.hpp"
 #include <stdio.h>
 
 template <class Type>
@@ -48,39 +49,21 @@ BinaryTreeNode<Type> :: BinaryTreeNode(Type data) : Node<Type>(data)
 }
 
 template <class Type>
-BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getRootNode()
+BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getRoot()
 {
     return this->root;
 }
 
 template <class Type>
-BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getRightNode()
+BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getRight()
 {
     return this->right;
 }
 
 template <class Type>
-BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getLeftNode()
+BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getLeft()
 {
     return this->left;
-}
-
-template <class Type>
-BinaryTreeNode<Type> * BinaryTreeNode<Type> * root()
-{
-    this->next = nextNodePointer;
-}
-
-template <class Type>
-BinaryTreeNode<Type> * BinaryTreeNode<Type> * left()
-{
-    this->next = nextNodePointer;
-}
-
-template <class Type>
-BinaryTreeNode<Type> * BinaryTreeNode<Type> * right()
-{
-    this->next = nextNodePointer;
 }
 
 #endif /* BinaryNode_hpp */
