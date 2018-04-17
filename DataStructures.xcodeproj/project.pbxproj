@@ -73,6 +73,7 @@
 		70A63A232022597800C6E958 /* CrimeData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CrimeData.hpp; sourceTree = "<group>"; };
 		70A8717A203F50F400CE3E4C /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
 		70A8717D203F510800CE3E4C /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
+		70B5B22820866B91006986D8 /* AVLTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AVLTree.hpp; sourceTree = "<group>"; };
 		70C814582034BF6800124328 /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
 		70FC7C4D206034BB00E30CBB /* Graph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Graph.png; path = ../../../Other/Graph.png; sourceTree = "<group>"; };
 		70FC7C502060364100E30CBB /* Graph.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Graph.hpp; sourceTree = "<group>"; };
@@ -228,6 +229,7 @@
 				706CC52B206AD407001C79F6 /* Tree.hpp */,
 				7010CC23206D60DC00B52A04 /* BinarySearchTree.cpp */,
 				7010CC24206D60DC00B52A04 /* BinarySearchTree.hpp */,
+				70B5B22820866B91006986D8 /* AVLTree.hpp */,
 			);
 			path = NonLinear;
 			sourceTree = "<group>";
