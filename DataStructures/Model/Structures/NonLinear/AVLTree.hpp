@@ -128,18 +128,6 @@ BinaryTreeNode<Type> * AVLTree<Type> :: balanceSubTree (BinaryTreeNode<Type> * p
 }
 
 template <class Type>
-void AVLTree<Type> :: insert(Type item)
-{
-    insertNOde(this->getRoot(), item);
-}
-
-template <class Type>
-void AVLTree<Type> :: remove(Type item)
-{
-    removeNode(this->getRoot(), item);
-}
-
-template <class Type>
 AVLTree<Type> :: AVLTree() : BinarySearchTree<Type>()
 {
     this->root = nullptr;
@@ -193,6 +181,36 @@ BinaryTreeNode<Type> * AVLTree<Type> :: removeNode(BinaryTreeNode<Type> * parent
 }
 
 template <class Type>
+BinaryTreeNode<Type> * AVLTree<Type> :: insertNode(BinaryTreeNode<Type> * parent, Type inserted)
+{
+    if(parent == nullptr)
+    {
+        parent = new BinaryTreeNode<Type>(inserted);
+        return parent;
+    }
+    else if(inserted < parent->getNodeData())
+    {
+        parent->setLeftChild(insertNode(parent->getLeftNode(), inserted));
+        parent = balanceSubTree(parent);
+    }
+    else if(inserted > parent->getNodeData())
+    {
+        parent->setRightChild(insertNode(parent->getRightNode(), inserte));
+        parent = balanceSubTree(parent);
+    }
+    return parent;
+}
 
+template <class Type>
+void AVLTree<Type> :: insert(Type item)
+{
+    insertNode(this->getRoot(), item);
+}
+
+template <class Type>
+void AVLTree<Type> :: remove(Type item)
+{
+    removeNode(this->getRoot(), item);
+}
 
 #endif /* AVLTree_hpp */
