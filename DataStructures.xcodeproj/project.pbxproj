@@ -54,6 +54,7 @@
 		701335C4202CD92E001477CF /* Node UML.uxf */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = "Node UML.uxf"; path = "../../../Other/Node UML.uxf"; sourceTree = "<group>"; };
 		701335C8202CE499001477CF /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 		702465BF2024F005000ECD56 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
+		703C94EF208E50FE00BC9861 /* N_AryTreeNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = N_AryTreeNode.hpp; sourceTree = "<group>"; };
 		706B49AE203CA29B001AB5B1 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
 		706B49B0203CC19A001AB5B1 /* LinkedListTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedListTester.cpp; sourceTree = "<group>"; };
 		706B49B1203CC19A001AB5B1 /* LinkedListTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedListTester.hpp; sourceTree = "<group>"; };
@@ -205,6 +206,7 @@
 				706B49AE203CA29B001AB5B1 /* Node.hpp */,
 				700280F5204490B6003EFF0B /* DoubleNode.hpp */,
 				706CC525206AC02F001C79F6 /* BinaryTreeNode.hpp */,
+				703C94EF208E50FE00BC9861 /* N_AryTreeNode.hpp */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
