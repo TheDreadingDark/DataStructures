@@ -214,6 +214,8 @@ void BinarySearchTree<Type> :: inOrderTraversal(BinaryTreeNode<Type> * inStart)
 //    }
 //}
 
+//void demoTraversalSteps(BinaryTreeNode<Type> * node);
+
 template <class Type>
 void BinarySearchTree<Type> :: preOrderTraversal()
 {
@@ -249,7 +251,7 @@ void BinarySearchTree<Type> :: postOrderTraversal(BinaryTreeNode<Type> * current
 }
 
 template <class Type>
-BinaryTreeNode<Type> * BinarySearchTree :: getRightMostChild(BinaryTreeNode<Type> * startingNode)
+BinaryTreeNode<Type> * BinarySearchTree<Type> :: getRightMostChild(BinaryTreeNode<Type> * startingNode)
 {
     BinaryTreeNode<Type> * currentNode = startingNode;
     BinaryTreeNode<Type> * previous = nullptr;
@@ -262,8 +264,8 @@ BinaryTreeNode<Type> * BinarySearchTree :: getRightMostChild(BinaryTreeNode<Type
     return previous;
 }
 
-tempalte <class Type>
-BinaryTreeNode<Type> * BinarySearchTree :: getLeftMostChild(BinaryTreeNode<Type> * startingNode)
+template <class Type>
+BinaryTreeNode<Type> * BinarySearchTree<Type> :: getLeftMostChild(BinaryTreeNode<Type> * startingNode)
 {
     BinaryTreeNode<Type> * currentNode = startingNode;
     BinaryTreeNode<Type> * previous = nullptr;
@@ -291,7 +293,7 @@ Type BinarySearchTree<Type> :: findMinimum()
 }
 
 template <class Type>
-void BinarySearchTree :: removeNode(BinaryTreeNode<Type> removeMe)
+void BinarySearchTree<Type> :: removeNode(BinaryTreeNode<Type> * removeMe)
 {
     BinaryTreeNode<Type> * current;
     BinaryTreeNode<Type> * previous;
@@ -405,18 +407,11 @@ BinaryTreeNode<Type> * BinarySearchTree :: getRoot(BinaryTreeNode<Type> * curren
     
 }
 
-//BinaryTreeNode<Type> * getRoot();
-
 template <class Type>
 void BinaryTreeNode<Type> :: setRootNode(BinaryTreeNode<Type> * newRoot)
 {
     root = newRoot;
 }
-
-//void inOrderTraversal();
-//void preOrderTraversal();
-//void postOrderTraversal();
-//void demoTraversalSteps(BinaryTreeNode<Type> * node);
 
 template <class Type>
 int BinarySearchTree<Type> :: getSize()
