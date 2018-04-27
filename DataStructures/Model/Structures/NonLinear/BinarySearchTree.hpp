@@ -402,9 +402,10 @@ void BinarySearchTree<Type> :: destroyTree(BinaryTreeNode<Type> * node)
 }
 
 template <class Type>
-BinaryTreeNode<Type> * BinarySearchTree :: getRoot(BinaryTreeNode<Type> * current)
+BinaryTreeNode<Type> * BinarySearchTree<Type> :: getRoot()
 {
-    
+    assert(this->root != nullptr);
+    return getLeftMostChild(this->root)->getData();
 }
 
 template <class Type>
@@ -427,22 +428,6 @@ template <class Type>
 int BinarySearchTree<Type> :: getHeight()
 {
     return calculateHeight(this->root);
-}
-
-template <class Type>
-bool BinarySearchTree<Type> :: isComplete(BinaryTreeNode<Type> * startNode, int index, int size)
-{
-    if(startNode == nullptr)
-    {
-        return true;
-    }
-    
-    if(index >= size)
-    {
-        return false;
-    }
-    
-    return (isComplete(startNode->getLeftNode(), 2 * index + 1, size) && isComplete(startNode->getRightNode(), 2 * index + 2, size));
 }
 
 //bool isBalanced();
@@ -477,7 +462,7 @@ bool BinarySearchTree<Type> :: contains(Type itemToFind)
 
 //void insert(Type itemToInsert);
 
-template <class Type>
+4template <class Type>
 void BinarySearchTree<Type> :: remove(Type getRidOfMe)
 {
     if(this->root == nullptr)
