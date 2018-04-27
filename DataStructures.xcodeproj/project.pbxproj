@@ -54,6 +54,7 @@
 		702465BF2024F005000ECD56 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 		703C94EF208E50FE00BC9861 /* N_AryTreeNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = N_AryTreeNode.hpp; sourceTree = "<group>"; };
 		705DE78420939F6A00097721 /* HashNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HashNode.hpp; sourceTree = "<group>"; };
+		705DE7872093A19000097721 /* Hashtable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Hashtable.hpp; sourceTree = "<group>"; };
 		706B49AE203CA29B001AB5B1 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
 		706B49B0203CC19A001AB5B1 /* LinkedListTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedListTester.cpp; sourceTree = "<group>"; };
 		706B49B1203CC19A001AB5B1 /* LinkedListTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedListTester.hpp; sourceTree = "<group>"; };
@@ -231,6 +232,7 @@
 				706CC52B206AD407001C79F6 /* Tree.hpp */,
 				7010CC24206D60DC00B52A04 /* BinarySearchTree.hpp */,
 				70B5B22820866B91006986D8 /* AVLTree.hpp */,
+				705DE7872093A19000097721 /* Hashtable.hpp */,
 			);
 			path = NonLinear;
 			sourceTree = "<group>";
