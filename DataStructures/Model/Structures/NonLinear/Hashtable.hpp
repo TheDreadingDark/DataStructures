@@ -34,6 +34,61 @@ public:
     long getSize();
 };
 
+template <class Type>
+Hashtable<Type> :: Hashtable()
+{
+    capacity = 101;
+    internalStorage = new HashNode<Type>*[capacity];
+    size = 0;
+    loadFactor = .80;
+}
 
+template <class Type>
+Hashtable<Type> :: ~Hashtable()
+{
+    delete [] internalStorage;
+}
+
+template <class Type>
+bool Hashtable<Type> :: isPrime(long current)
+{
+    return false;
+}
+
+template <class Type>
+long Hashtable<Type> :: findPosition(HashNode<Type> * insert)
+{
+    return -1;
+}
+
+template <class Type>
+long Hashtable<Type> :: handleCollision(HashNode<Type> * current, long index)
+{
+    return -1;
+}
+
+template <class Type>
+long Hashtable<Type> :: getSize()
+{
+    return -1;
+}
+
+template <class Type>
+long Hashtable<Type> :: getNextPrime()
+{
+    return -1;
+}
+
+template <class Type>
+void Hashtable<Type> :: resize()
+{
+    
+}
+
+template <class Type>
+void Hashtable<Type> :: insert(Type value)
+{
+    
+}
 
 #endif /* Hashtable_hpp */
