@@ -462,7 +462,7 @@ bool BinarySearchTree<Type> :: contains(Type itemToFind)
 
 //void insert(Type itemToInsert);
 
-4template <class Type>
+template <class Type>
 void BinarySearchTree<Type> :: remove(Type getRidOfMe)
 {
     if(this->root == nullptr)
